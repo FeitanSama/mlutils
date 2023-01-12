@@ -13,7 +13,7 @@ pip install mlutils
 Vous pouvez également télécharger le code source de mlutils et l'installer manuellement en utilisant setup.py :
 
 ```
-git clone https://github.com/your-username/mlutils.git
+git clone https://github.com/FeitanSama/mlutils.git
 cd mlutils
 python setup.py install
 ```
