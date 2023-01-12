@@ -1,12 +1,5 @@
 import numpy as np
 import matplotlib.pyplot as plt
-from sklearn.datasets import make_blobs
-
-# Dataset
-
-X, y = make_blobs(n_samples=100, n_features=2, centers=2, random_state=0)
-y = y.reshape((y.shape[0], 1))
-# plt.scatter(X[:,0], X[:, 1], c=y, cmap='bwr')
 
 # Modele Logistique
 
@@ -92,5 +85,3 @@ def regression_logistique(X, y, learning_rate=0.1, n_iter=100):
   plt.xlabel('n_iteration')
   plt.ylabel('Log_loss')
   plt.title('Evolution des erreurs')
-
-# regression_logistique(X, y)
