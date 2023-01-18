@@ -1,12 +1,6 @@
 import numpy as np
 from sklearn.datasets import make_regression
-import sys
-import os
-
-mlutils_dir = (os.path.abspath(os.path.join(os.path.dirname(__file__), '..')) + '/mlutils/')
-sys.path.append(mlutils_dir)
-
-from linear_regression.linear_regression import *
+from mlutils.linear_regression import *
 
 # Load the dataset
 
