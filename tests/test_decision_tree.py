@@ -1,9 +1,4 @@
 import numpy as np
-import sys
-import os
-
-mlutils_dir = (os.path.abspath(os.path.join(os.path.dirname(__file__), '..')) + '/mlutils/')
-sys.path.append(mlutils_dir)
 
 from mlutils.decision_tree import build_tree
 
