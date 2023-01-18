@@ -5,7 +5,7 @@ import os
 mlutils_dir = (os.path.abspath(os.path.join(os.path.dirname(__file__), '..')) + '/mlutils/')
 sys.path.append(mlutils_dir)
 
-from decision_tree.decision_tree import build_tree
+from mlutils.decision_tree import build_tree
 
 # Load the dataset
 X = np.array([[1, 2, 3], [2, 3, 4], [3, 4, 5], [4, 5, 6], [5, 6, 7], [6, 7, 8], [7, 8, 9], [8, 9, 10], [9, 10, 11], [10, 11, 12]])
