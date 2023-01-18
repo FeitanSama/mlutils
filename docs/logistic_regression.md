@@ -20,7 +20,7 @@
 
 ## Introduction
 
-En résumé, ce code implémente un modèle de régression logistique en utilisant la méthode de descente de gradient en Python.
+En résumé, ce code implémente un modèle de régression logistique en utilisant la méthode de descente de gradient en Python. Il calcule d'abord la prédiction pour un ensemble de données en utilisant les paramètres, puis calcule la fonction de coût en utilisant la formule de log-loss pour mesurer la différence entre les prédictions et les labels réels. Il calcule ensuite les gradients pour les paramètres et utilise la descente de gradient pour optimiser les paramètres. Il affiche également les prédictions sur un graphique en utilisant `predict()` et `visualisation()` pour visualiser les limites de décision. Il trace également l'évolution des erreurs dans un graphique de log_loss contre n_iteration.
 
 ### I. La fonction sigmoid(x)
 
