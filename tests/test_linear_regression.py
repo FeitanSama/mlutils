@@ -6,7 +6,7 @@ import os
 mlutils_dir = (os.path.abspath(os.path.join(os.path.dirname(__file__), '..')) + '/mlutils/')
 sys.path.append(mlutils_dir)
 
-from Linear_regression.linear_regression import *
+from linear_regression.linear_regression import *
 
 # Load the dataset
 
