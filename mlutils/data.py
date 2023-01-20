@@ -1,4 +1,8 @@
 import csv
+import numpy as np
+import math
+import pandas as pd
+from functools import reduce
 
 def load_data(file_path):
     data = []
@@ -9,10 +13,7 @@ def load_data(file_path):
     return data
 
 def head(data, n=5):
-    if n >= 0:
-        return data[:n]
-    else:
-        return data[n:]
+    return data[1:n+1]
 
 def index(data):
     return list(range(len(data)))
@@ -23,8 +24,6 @@ def columns(data):
 def shape(data):
     return ((len(data)-1), len(data[0]))
 
-from functools import reduce
-
 def sum(data, axis=None):
     if axis is None or axis == 0:
         return [reduce(lambda x, y: x + y, row) for row in data]
@@ -33,7 +32,14 @@ def sum(data, axis=None):
     else:
         raise ValueError("Invalid axis, use None, 0 or 1")
 
-import numpy as np
-
 def isna(data):
-    return [[cell is None or isinstance(cell, (float, int)) and np.isnan(cell) for cell in row] for row in data]
+    def _isna(val):
+        if val == 'None' or val == 'none' or val == 'NONE' or val is None or val == 'NaN' or val == 'nan' or val == 'NAN' or val == np.nan:
+            return True
+        elif isinstance(val, (str, bool)):
+            return False
+        else:
+            return pd.isna(val)
+
+    data = pd.DataFrame(data)
+    return data.applymap(_isna)

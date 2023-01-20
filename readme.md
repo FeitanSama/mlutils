@@ -24,7 +24,7 @@ Pour utiliser mlutils dans votre code Python, importez les modules et les foncti
 
 ```python
 import mlutils
-from mlutils import load, models, preprocessing
+from mlutils import data, models, preprocessing
 
 # Load the data
 data = mlutils.load_data('data.csv')
