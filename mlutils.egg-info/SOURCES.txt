@@ -3,6 +3,7 @@ mlutils/__init__.py
 mlutils/boosting.py
 mlutils/decision_tree.py
 mlutils/linear_regression.py
+mlutils/load.py
 mlutils/logistic_regression.py
 mlutils/markov_chains.py
 mlutils.egg-info/PKG-INFO
