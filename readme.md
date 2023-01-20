@@ -10,12 +10,22 @@ Pour utiliser mlutils, installez-le à partir de PyPI en utilisant `pip` :
 pip install mlutils
 ```
 
+Exécuter cette commande afin d'avoir toutes les librairies utilise.
+```
+pip install -r requirements.txt
+```
+
 Vous pouvez également télécharger le code source de mlutils et l'installer manuellement en utilisant setup.py :
 
 ```
 git clone https://github.com/FeitanSama/mlutils.git
 cd mlutils
 python setup.py install
+```
+
+Exécuter cette commande afin d'avoir toutes les librairies utilise.
+```
+pip install -r requirements.txt
 ```
 
 ## Utilisation
