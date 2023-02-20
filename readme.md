@@ -23,11 +23,6 @@ cd mlutils
 python setup.py install
 ```
 
-Exécuter cette commande afin d'avoir toutes les librairies utilise.
-```
-pip install -r requirements.txt
-```
-
 ## Utilisation
 
 Pour utiliser mlutils dans votre code Python, importez les modules et les fonctions dont vous avez besoin :
